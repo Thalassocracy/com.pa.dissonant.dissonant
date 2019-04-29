@@ -10,6 +10,10 @@
     "signature": "not yet implemented",
     "version": "1.0.0",
     "icon": "https://i.imgur.com/4DkquJb.png",
-    "priority": 115
-    
+    "priority": 115,
+    "category": [
+        "balance",
+        "titans",
+        "fix"
+      ]
 }
