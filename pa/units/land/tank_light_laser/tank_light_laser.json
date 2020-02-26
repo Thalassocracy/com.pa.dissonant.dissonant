@@ -2,8 +2,8 @@
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name": "DissonAnt",
     "description": "!LOC:Light tank- Well-rounded. Reliable. Attacks land and sea targets.",
-    "max_health": 250,
-    "build_metal_cost": 150,
+    "max_health": 2450,
+    "build_metal_cost": 1600,
     "attachable": {
         "offsets": {
             "root": [
@@ -19,13 +19,14 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Tank",
+        "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_CannonBuildable"
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Heavy"
     ],
     "transportable": {
         "size": 1
@@ -33,10 +34,10 @@
     "guard_layer": "WL_LandHorizontal",
     "navigation": {
         "type": "land-small",
-        "acceleration": 100,
-        "brake": 100,
-        "move_speed": 10,
-        "turn_speed": 90
+        "acceleration": 200,
+        "brake": 200,
+        "move_speed": 12,
+        "turn_speed": 200
     },
     "physics": {
         "radius": 4
@@ -60,9 +61,15 @@
     },
     "tools": [
         {
-            "spec_id": "/pa/units/land/tank_light_laser/tank_light_laser_tool_weapon.json",
+            "spec_id": "/pa/units/land/tank_light_laser/champion_weapon.json",
             "aim_bone": "socket_aim",
-            "muzzle_bone": "socket_muzzle"
+            "muzzle_bone": [
+                "socket_muzzle",
+                "socket_muzzle",
+                "socket_muzzle",
+                "socket_muzzle"
+            ],
+            "projectiles_per_fire": 4
         }
     ],
     "events": {
