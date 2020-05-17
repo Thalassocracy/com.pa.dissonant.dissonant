@@ -123,5 +123,24 @@
         6.4,
         2.6835
     ],
-    "TEMP_texelinfo": 5.84968
+    "TEMP_texelinfo": 5.84968,
+    "mass_teleporter": {
+        "radius": 30,
+        "phasing_duration": 1,
+        "phasing_health_frac": 0.5,
+        "fixup_radius": 30,
+        "energy_drain": 200,
+        "energy_cost": 1000,
+        "unit_cap": 10,
+        "target_types": "Bot | Air"
+    },
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Attack",
+        "ORDER_Attack",
+        "ORDER_Use",
+        "ORDER_MassTeleport"
+    ]
 }
