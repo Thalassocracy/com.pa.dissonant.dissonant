@@ -1,11 +1,14 @@
-Changes:
+# Changes:
 
-Advanced Metal Extractor:
+## Advanced Metal Extractor:
+
 Metal Produced: 15 -> 11
 Build Cost: 2000 -> 1250
 
-Slammer:
+## Slammer:
+
 Range: 110 -> 100
 
-Leveler:
+## Leveler:
+
 Range: 140 -> 120
